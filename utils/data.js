@@ -38,7 +38,7 @@ const data = {
 
         }, {
             name:"lowind shirt",
-            slug: 'free shirt',
+            slug: '1',
             category:'Shirts',
             image:'/images/four.jpg',
             price:2,
@@ -50,7 +50,7 @@ const data = {
 
         }, {
             name:"top retede Shirt",
-            slug: 'top ten ',
+            slug: 'top',
             category:'Shirts',
             image:'/images/five.jpg',
             price:1000,
