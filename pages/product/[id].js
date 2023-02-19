@@ -51,12 +51,24 @@ export default function ProductScreen() {
             <li className="flex">description: {product.description}</li>
           </ul>
         </div>
-        <div className=" card flex gap-2">
-          <div>Price: </div>
-          <div> ${product.price}</div>
-          <div className="mb-2 flex gap-2">
-            <div>Status:</div>
-            <div>{product.countInStock > 0 ? "In stock" : "Unavailable"}</div>
+        <div className="  h-[150px]">
+    
+          <div class="flex justify-center w-full">
+            <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+              <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">
+           price : {product.price}
+              </h5>
+              <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">
+              Status: {product.countInStock > 0 ? "In stock" : "Unavailable"}
+              </h5>
+             
+              <button
+                type="button"
+                className=" inline-block px-6 py-2.5 text-center bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+              >
+            Add to Card
+              </button>
+            </div>
           </div>
         </div>
       </div>
